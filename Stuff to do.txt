@@ -1,0 +1,22 @@
+Logo as favicon 
+
+Logo as navbar or beside navbar
+
+Navabar animation as babaji's audio (use the three line)
+    content navbar: 
+                - Home  --> Home content
+                - Academics --> Academic content
+                - Beyond Academics --> Beyond acdemics
+                - Podcasts --> Memecast and unnecessary podcast
+                - Team Details --> All about the team
+                - Testimonials --> By alumni
+                - Contact Us (bottom right) --> All the details
+    content Home:
+                - Sliding Announcement or latest release like CB app
+                - Announcement feed and link to new videos
+                - Academics (Explore Academics)
+                - Beyond academics (Explore Beyond Academics)
+                - DU video and GOAT announcement and beyond academics announcement videos
+                - Refer https://www.commclassroom.org/
+                - Join our comunity 
+                    Instagram and Discord and etc

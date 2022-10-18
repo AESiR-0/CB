@@ -1,0 +1,36 @@
+:root {
+  overflow-x: hidden;
+  background-color: black;
+}
+
+iframe{
+    display: flex
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  vertical-align:middle;
+  width: 560px;
+
+}
+
+.underline {
+  height: 5px;
+  width: 300px;
+  position: relative;
+  top: 50px;
+  left: 600px;
+  background-color: beige;
+}
+
+.head {
+  color: whitesmoke;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  top: 50px;
+  font-family: Arial, Helvetica, sans-serif;
+}

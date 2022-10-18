@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="./Assets/favicon_logo/logo.webp">
+  <link rel="stylesheet" href="./stylesheets/sidebar.css">
+  <link rel="stylesheet" href="./stylesheets/nav.css">
+  <title>Namashkar</title>
+</head>
+
+<section>
+  <div class="hamburger-menu">
+    <input id="menu__toggle" type="checkbox" />
+    <label class="menu__btn" for="menu__toggle">
+      <span></span>
+    </label>
+
+    <div class="nav">
+      <a href="./index.html"><img src="./Assets/favicon_logo/logo.webp" alt=""></a>
+    </div>
+    <div class="nav2">
+
+    </div>
+
+    <ul class="menu__box">
+      <li><a class="menu__item" href="./index.html">Home</a></li><br>
+      <li><a class="menu__item" href="./academics.html">Academics</a></li><br>
+      <li><a class="menu__item" href="./beyond_academics.html">Beyond Academics</a></li><br>
+      <li><a class="menu__item" href="./podcasts.html">Podcasts</a></li><br>
+      <li><a class="menu__item" href="./testimonials.html">Testimonials</a></li><br>
+      <li><a href="./Join.html" class="menu__item">Join our Aashram</a></li>
+    </ul>
+  </div>
+
+  <div class="slideshow-container">
+
+    <div id="announcements" class="head center">
+      <h2>Announcements</h2>
+    </div>
+    <div id="ann"></div>
+    <div class="mySlides fade">
+      <img src="./Assets/announcement 2.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides fade">
+      <img src="./Assets/announcement.jfif" style="width:100%">
+    </div>
+
+    <div class="mySlides fade">
+      <img src="./Assets/announcement.jpg" style="width:100%">
+    </div>
+
+  </div>
+  <br>
+
+  <div class="dot-container" style="text-align:center">
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+  </div>
+</section>
+<section>
+  <div class="head center">
+    <h2>New Uploads</h2>
+  </div>
+  <div class="underline center"></div>
+  <div class="upload center">
+    <div class="latest_upload">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/t8hDWg8YXoI" title="YouTube video player"
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+    </div>
+    <div class="latest_upload">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/NR_b3IsQQSA" title="YouTube video player"
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+    </div>
+  </div>
+</section>
+<section>
+  <div class="explore">
+    <div class="img">
+      <img src="./Assets/courses.png" alt="">
+    </div>
+    <div class="heading">
+      <div class="pointers"></div>
+    </div>
+  </div>
+</section>
+
+<script>
+  let slideIndex = 0;
+  showSlides();
+
+  function showSlides() {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    let dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) { slideIndex = 1 }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex - 1].style.display = "block";
+    dots[slideIndex - 1].className += " active";
+    setTimeout(showSlides, 2000); // Change image every 2 seconds
+  }
+</script>
+
+</body>
+
+</html>
